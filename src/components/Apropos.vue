@@ -5,7 +5,7 @@
 
     <p>
       <span class="white">Développeur web fullstack junior</span>, je suis actuellement en troisième année de
-      <span class="white">BUT MMI à l'IUT de Troyes</span>, je suis à la recherche d'un stage pour mettre en application mes <strong>compétences</strong>.
+      <span class="white">BUT MMI à l'IUT de Troyes</span>, je suis à la recherche d'un stage pour mettre en application mes compétences.
     </p>
 
     <p>

@@ -80,5 +80,19 @@ a{
   transition: color 0.3s ease;
 }
 
+.circle{
+  --circle-size: 40px;
+  position: fixed;
+  height: var(--circle-size);
+  width: var(--circle-size);
+  border: 2px solid #cecece;
+  border-radius: 100%;
+  top: calc(var(--circle-size) /2*-1);
+  left: calc(var(--circle-size) /2*-1);
+  pointer-events: none;
+}
+
+
+
 
 

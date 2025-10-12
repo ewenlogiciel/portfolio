@@ -1,0 +1,24 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../Home.vue'
+import Agenda from '../components/Projets/Agenda.vue'
+import Utopia from '../components/Projets/Utopia.vue'
+import DataVision from '../components/Projets/DataVision.vue'
+import OblivionFest from '../components/Projets/OblivionFest.vue'
+import Kipelle from '../components/Projets/Kipelle.vue'
+
+const routes = [
+    { path: '/', component: Home },
+    { path: '/agenda', component: Agenda },
+    { path: '/utopia', component: Utopia },
+    { path: '/datavision', component: DataVision },
+    { path: '/oblivion_fest', component: OblivionFest },
+    { path: '/kipelle', component: Kipelle },
+
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+})
+
+export default router

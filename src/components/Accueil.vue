@@ -6,8 +6,8 @@
   <div id="accueil">
 
 
-    <h1>Bonjour, je suis Ewen D'Avanzo</h1>
-    <h3>développeur web junior</h3>
+    <h3>Bonjour, je m'appelle Ewen D'Avanzo, je suis</h3>
+    <h1>Développeur web fullstack junior</h1>
 
   </div>
 </template>
@@ -24,9 +24,11 @@
 h1{
   margin-bottom: 2vh;
   font-size: xxx-large;
+  margin-top: 0;
 }
 
 h3{
   margin-top: 0;
+  margin-bottom: 0;
 }
 </style>

@@ -7,7 +7,7 @@
     <div
         v-for="skill in skills"
         :key="skill"
-        class="competence flex flex-col items-center justify-center bg-gray-800 hover:bg-gray-700 transition"
+        class="competence transition"
         style="
           border: 1px solid rgba(255, 255, 255, 0.3);
           width: fit-content;
@@ -41,6 +41,8 @@ const skills = [
   'TailwindCSS',
   'PHP',
   'MySQL',
+  'Figma',
+  'Wordpress',
   'GraphQL'
 ]
 
@@ -68,10 +70,11 @@ const skillKey = (name) => {
 
 .competence {
   cursor: pointer;
+  margin-bottom: 0.5rem;
 }
 
 .competence:hover {
-  background-color: #262626; /* un peu plus clair que bg-gray-800 */
+  background-color: #262626;
   color: #ffffff;
 }
 </style>

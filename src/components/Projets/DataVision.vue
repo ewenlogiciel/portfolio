@@ -1,0 +1,96 @@
+<script setup>
+
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+
+</script>
+
+<template>
+
+  <Header/>
+
+  <main>
+
+    <router-link to="/"><- Retour à la page d'accueil</router-link>
+
+
+    <h1>DataVision</h1>
+
+    <p>
+      Lors de ce projet en duo, j'ai créé avec mon collègue un site de Data Visualisation.
+      J'ai fait usage de la librairie Chart.js afin d'exploiter les données mises à disposition sur le site de l'Open Data University en les transformant en graphiques interactifs permettant une meilleure visualisation et analyse des informations.
+    </p>
+
+    <div class="screen">
+      <img src="/projets/datavision.png" alt="Agenda">
+    </div>
+
+    <a href="http://mmi23f04.mmi-troyes.fr/sae303/" target="_blank" class="bouton"><img src="/projets/world-wide-web.png" alt="world wide web icon"><span>Voir le site</span> </a>
+
+  </main>
+
+
+
+  <Footer/>
+
+</template>
+
+<style scoped>
+  main{
+    width: 60vw;
+    display: flex;
+    align-items: baseline;
+    margin-top: 25vh;
+  }
+
+  #app{
+    justify-content: start;
+  }
+
+  a{
+    transition: color 0.3s ease;
+
+  }
+
+  a:hover {
+    color: #ababab;
+  }
+
+  .bouton{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    transition: color 0.3s ease;
+    color: #a5a5a5;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .screen{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: color 0.3s ease;
+    padding: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .bouton:hover{
+    background-color: #262626;
+  }
+
+  .bouton img{
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+  }
+
+  img{
+    width: 60vw;
+  }
+
+</style>
