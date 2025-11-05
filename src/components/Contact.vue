@@ -13,14 +13,12 @@
         </a>
       </li>
 
-      <!-- LinkedIn -->
       <li>
         <a href="https://www.linkedin.com/in/ewendavanzo/" target="_blank" class="icon-link" width="32" height="32" viewBox="0 0 24 24">
           <img src="../assets/logos/linkedin-svgrepo-com.svg" alt="LinkedIn" class="icon-img">
         </a>
       </li>
 
-      <!-- Email -->
       <li>
         <a href="mailto:ewen.davanzo@gmail.com" class="icon-link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -34,20 +32,19 @@
 
 <style scoped>
 .icon-link svg path {
-  fill: gray;                /* gris de base */
+  fill: gray;
   transition: fill 0.3s ease;
 
 }
 
 .icon-link:hover svg path {
   fill: white;
-  /* devient blanc au survol */
 }
 
 .icon-img {
   width: 24px;
   height: 24px;
-  filter: grayscale(100%); /* gris de base */
+  filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
 
@@ -59,8 +56,8 @@
 .flex.gap-4{
   position: fixed;
   list-style: none;
-  top: 5vh;        /* marge verticale depuis le haut */
-  left: 88%;       /* on part du milieu de la fenêtre */
+  top: 5vh;
+  left: 88%;
 }
 
 li{

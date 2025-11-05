@@ -2,18 +2,12 @@
 <div class="competence_container">
 
   <h2>Compétences</h2>
-  <div class="" style="width:50vw;">
+  <div id="competences">
 
     <div
         v-for="skill in skills"
         :key="skill"
-        class="competence transition"
-        style="
-          border: 1px solid rgba(255, 255, 255, 0.3);
-          width: fit-content;
-          padding: 0.5rem;
-          border-radius: 0.2rem;
-      "
+        class="competence"
     >
       <img
           v-if="logos[skillKey(skill)]"
@@ -27,12 +21,10 @@
 
 </div>
 
-
-
 </template>
 
 <script setup>
-// Liste des compétences
+
 const skills = [
   'Symfony',
   'Vue.js',
@@ -43,7 +35,8 @@ const skills = [
   'MySQL',
   'Figma',
   'Wordpress',
-  'GraphQL'
+  'GraphQL',
+  'Unity'
 ]
 
 // Import automatique de toutes les images du dossier assets/logos
@@ -68,13 +61,30 @@ const skillKey = (name) => {
   width: 60vw;
 }
 
+#competences{
+  width: 45vw;
+  display: flex;
+  column-gap: 0.5vw;
+  flex-wrap: wrap;
+}
+
 .competence {
   cursor: pointer;
   margin-bottom: 0.5rem;
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  align-items: center;
 }
 
 .competence:hover {
   background-color: #262626;
   color: #ffffff;
+}
+
+img{
+  width: 1.5rem;
+  margin-right: 0.5rem;
 }
 </style>

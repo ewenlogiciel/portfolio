@@ -74,8 +74,8 @@
   width: 100%;
   transition: background-color 0.3s;
   padding: 1rem;
-  display: block; /* important pour que la div à l'intérieur garde sa mise en page */
-  text-decoration: none; /* supprime le soulignement */
+  display: block;
+  text-decoration: none;
   color: inherit;
   margin-bottom: 1rem;
 }

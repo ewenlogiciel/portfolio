@@ -1,4 +1,3 @@
-// scripts/script.js
 
 window.addEventListener('DOMContentLoaded', () => {
     console.clear();
@@ -48,7 +47,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     tick();
 
-    // --- Effet texte survol h1 ---
     const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let interval = null;
 
