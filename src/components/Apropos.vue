@@ -24,12 +24,11 @@
 <style scoped>
 #apropos {
   width: 60vw;
-  margin-bottom: 20vh;
+  margin-bottom: 10vh;
 }
 
 .white{
   color: #d6d6d6;
   font-weight: bold;
-
 }
 </style>

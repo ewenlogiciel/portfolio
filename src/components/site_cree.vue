@@ -1,46 +1,10 @@
-<template>
-<div class="competence_container">
-
-  <h2>Compétences</h2>
-  <div id="competences">
-
-    <div
-        v-for="skill in skills"
-        :key="skill"
-        class="competence"
-    >
-      <img
-          v-if="logos[skillKey(skill)]"
-          :src="logos[skillKey(skill)]"
-          :alt="skill + ' logo'"
-          class="w-12 h-12 mb-2 object-contain"
-      />
-      <p class="text-white font-medium" style="margin: 0;">{{ skill }}</p>
-    </div>
-  </div>
-
-</div>
-
-</template>
-
 <script setup>
-
 const skills = [
-  'Symfony',
   'Vue.js',
-  'Docker',
   'Javascript',
   'TailwindCSS',
-  'PHP',
-  'MySQL',
-  'Figma',
-  'Wordpress',
-  'GraphQL',
-  'Unity'
 ]
 
-// Import automatique de toutes les images du dossier assets/logos
-// ⚠️ Chemin relatif au fichier courant
 const logos = Object.fromEntries(
     Object.entries(import.meta.glob('@/assets/logos/*.{png,jpg,svg}', { eager: true }))
         .map(([path, module]) => {
@@ -49,17 +13,39 @@ const logos = Object.fromEntries(
         })
 )
 
-// Fonction utilitaire pour normaliser le nom (Symfony → symfony)
 const skillKey = (name) => {
   return name.toLowerCase().replace('.', '').replace(/\s+/g, '')
 }
 </script>
 
-<style scoped>
+<template>
+  <div class="sitecree_container">
 
-.competence_container{
+    <h2>Site web créé avec</h2>
+    <div id="competences">
+
+      <div
+          v-for="skill in skills"
+          :key="skill"
+          class="competence"
+      >
+        <img
+            v-if="logos[skillKey(skill)]"
+            :src="logos[skillKey(skill)]"
+            :alt="skill + ' logo'"
+            class="w-12 h-12 mb-2 object-contain"
+        />
+        <p class="text-white font-medium" style="margin: 0;">{{ skill }}</p>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+<style scoped>
+.sitecree_container{
   width: 60vw;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
 }
 
 #competences{

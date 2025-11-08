@@ -7,6 +7,8 @@
 
     <h2>Projets</h2>
 
+    <div class="projets2">
+
     <router-link to="/agenda" class="projet">
       <h3>Agenda</h3>
       <p>Application web d'agenda collaboratif</p>
@@ -47,16 +49,7 @@
       </div>
     </router-link>
 
-    <router-link to="/kipelle" class="projet">
-      <h3>Kipelle</h3>
-      <p>Application web de cojardinage</p>
-      <div class="compt-container">
-        <div class="comp">PHP</div>
-        <div class="comp">Javascript</div>
-        <div class="comp">MySQL</div>
-        <div class="comp">Docker</div>
-      </div>
-    </router-link>
+    </div>
 
   </div>
 </template>
@@ -64,6 +57,13 @@
 <style scoped>
 #projets{
   width: 60vw;
+  margin-bottom: 10vh;
+}
+
+.projets2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .projet{

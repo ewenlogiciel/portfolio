@@ -6,6 +6,7 @@ import Accueil from "@/components/Accueil.vue";
 import Projets from "@/components/Projets.vue";
 import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
+import Site_cree from "@/components/site_cree.vue";
 
 </script>
 
@@ -24,6 +25,8 @@ import Header from "@/components/Header.vue";
     <Contact/>
 
     <Apropos/>
+
+    <site_cree/>
 
     <Footer/>
 
