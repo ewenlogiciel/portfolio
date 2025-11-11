@@ -18,13 +18,13 @@ import Site_cree from "@/components/site_cree.vue";
 
     <Accueil/>
 
+    <Apropos/>
+
     <Competences />
 
     <Projets/>
 
     <Contact/>
-
-    <Apropos/>
 
     <site_cree/>
 

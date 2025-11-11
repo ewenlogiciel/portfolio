@@ -19,10 +19,11 @@ const skillKey = (name) => {
 </script>
 
 <template>
-  <div class="sitecree_container">
+  <div class="sitecree_container" >
 
     <h2>Site web créé avec</h2>
-    <div id="competences">
+
+    <div id="competences" data-aos="fade-right">
 
       <div
           v-for="skill in skills"

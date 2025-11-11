@@ -19,22 +19,22 @@
         </a>
       </li>
 
-      <li>
-        <a href="mailto:ewen.davanzo@gmail.com" class="icon-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M12 13.065l-11.707-7.065h23.414L12 13.065zM0 4v16h24V4H0zm22 2.435l-10 6.048-10-6.048V6l10 6.048L22 6v.435z"/>
-          </svg>
-        </a>
-      </li>
+      <div class="barre-verticale"></div>
     </ul>
 
 </template>
 
 <style scoped>
+
+.barre-verticale {
+  width: 0.15rem;
+  height: 100px;
+  background-color: gray;
+}
+
 .icon-link svg path {
   fill: gray;
   transition: fill 0.3s ease;
-
 }
 
 .icon-link:hover svg path {
@@ -49,15 +49,17 @@
 }
 
 .icon-link:hover .icon-img {
-  /* transforme le SVG en blanc */
   filter: brightness(0) invert(1);
 }
 
 .flex.gap-4{
   position: fixed;
   list-style: none;
-  top: 5vh;
-  left: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 10vh;
+  right: 90%;
 }
 
 li{

@@ -3,11 +3,11 @@
 </script>
 
 <template>
-  <div id="projets">
+  <div id="projets" >
 
     <h2>Projets</h2>
 
-    <div class="projets2">
+    <div class="projets2" data-aos="fade-right">
 
     <router-link to="/agenda" class="projet">
       <h3>Agenda</h3>

@@ -1,7 +1,9 @@
 <template>
 
-  <div id="apropos">
+  <div id="apropos" >
   <h2>À propos</h2>
+
+    <div data-aos="fade-right">
 
     <p>
       <span class="white">Développeur web fullstack junior</span>, je suis actuellement en troisième année de
@@ -10,8 +12,10 @@
 
     <p>
       Je suis passionné par le <span class="white">développement web</span> et la création de <span class="white">sites internet</span>.
-      Je suis toujours à la recherche de <span class="white">nouveaux défis</span> et d'<span class="white">opportunités</span> pour <span class="white">apprendre</span> et <span class="white">grandir</span> dans ce domaine.
+      Je suis toujours à la recherche de <span class="white">nouveaux défis</span> et d'<span class="white">opportunités</span> pour <span class="white">apprendre</span> et <span class="white">évoluer</span> dans ce domaine.
     </p>
+
+    </div>
 
 
   </div>

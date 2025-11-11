@@ -1,20 +1,20 @@
-<script setup>
+  <script setup>
 
-</script>
+  </script>
 
-<template>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#accueil" class="active">Accueil</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#apropos">À propos</a></li>
-      </ul>
-    </nav>
-  </header>
-</template>
+  <template>
+    <header>
+      <nav>
+        <ul>
+          <li><router-link to="/" class="active">Accueil</router-link></li>
+          <li><router-link to="/#competences">Compétences</router-link></li>
+          <li><router-link to="/#projets">Projets</router-link></li>
+          <li><router-link to="/#apropos">À propos</router-link></li>
+        </ul>
+      </nav>
+    </header>
+  </template>
 
-<style scoped>
+  <style scoped>
 
-</style>
+  </style>

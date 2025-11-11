@@ -2,7 +2,7 @@
 <div class="competence_container">
 
   <h2>Compétences</h2>
-  <div id="competences">
+  <div id="competences" data-aos="fade-right">
 
     <div
         v-for="skill in skills"
@@ -26,8 +26,8 @@
 <script setup>
 
 const skills = [
-  'Symfony',
   'Vue.js',
+  'Symfony',
   'Docker',
   'Javascript',
   'TailwindCSS',
@@ -39,8 +39,6 @@ const skills = [
   'Unity'
 ]
 
-// Import automatique de toutes les images du dossier assets/logos
-// ⚠️ Chemin relatif au fichier courant
 const logos = Object.fromEntries(
     Object.entries(import.meta.glob('@/assets/logos/*.{png,jpg,svg}', { eager: true }))
         .map(([path, module]) => {
@@ -49,7 +47,6 @@ const logos = Object.fromEntries(
         })
 )
 
-// Fonction utilitaire pour normaliser le nom (Symfony → symfony)
 const skillKey = (name) => {
   return name.toLowerCase().replace('.', '').replace(/\s+/g, '')
 }
