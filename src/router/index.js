@@ -22,11 +22,23 @@ const router = createRouter({
         }
 
         if (to.hash) {
-            return {
-                el: to.hash,
-                behavior: 'smooth',
-                block: 'center'
-            }
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    const element = document.querySelector(to.hash)
+                    if (element) {
+                        const elementRect = element.getBoundingClientRect()
+                        const absoluteElementTop = elementRect.top + window.pageYOffset
+                        const middle = absoluteElementTop - (window.innerHeight / 2) + (elementRect.height / 2)
+
+                        resolve({
+                            top: middle,
+                            behavior: 'smooth'
+                        })
+                    } else {
+                        resolve({ top: 0 })
+                    }
+                }, 100)
+            })
         }
 
         return { top: 0 }

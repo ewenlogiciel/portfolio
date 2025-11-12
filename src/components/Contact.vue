@@ -65,4 +65,10 @@
 li{
   margin-bottom: 2rem;
 }
+
+@media (max-width: 768px) {
+  .flex.gap-4 {
+    display: none;
+  }
+}
 </style>

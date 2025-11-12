@@ -64,15 +64,38 @@ const skillKey = (name) => {
   padding: 0.5rem;
   border-radius: 0.2rem;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .competence:hover {
   background-color: #262626;
-  color: #ffffff;
+}
+
+.competence:hover p {
+  color: white;
+}
+
+.competence:hover img {
+  filter: brightness(1.3);
 }
 
 img{
   width: 1.5rem;
   margin-right: 0.5rem;
+  transition: filter 0.3s ease;
+}
+
+p {
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .sitecree_container {
+    width: 90vw;
+  }
+
+  #competences {
+    width: 90vw;
+  }
 }
 </style>

@@ -85,6 +85,11 @@
   cursor: pointer;
 }
 
+.projet:hover h3,
+.projet:hover p {
+  color: white;
+}
+
 .compt-container{
   display: flex;
 }
@@ -103,9 +108,21 @@
 h3{
   margin-top: 0;
   margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
 }
 
 p{
   margin-top: 0;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  #projets {
+    width: 90vw;
+  }
+
+  .projets2 {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

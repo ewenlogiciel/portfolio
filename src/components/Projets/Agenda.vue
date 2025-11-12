@@ -80,14 +80,51 @@ import Footer from "@/components/Footer.vue";
     background-color: #262626;
   }
 
+  .bouton:hover img {
+    filter: brightness(2);
+  }
+
+  .bouton:hover span {
+    color: white;
+  }
+
   .bouton img{
     width: 16px;
     height: 16px;
     margin-right: 0.5rem;
+    transition: filter 0.3s ease;
+  }
+
+  .bouton span {
+    transition: color 0.3s ease;
   }
 
   img{
     width: 60vw;
+  }
+
+  @media (max-width: 768px) {
+    main {
+      width: 90vw;
+      margin-top: 15vh;
+    }
+
+    h1 {
+      font-size: x-large;
+    }
+
+    .screen {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .bouton {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
 </style>

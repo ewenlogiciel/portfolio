@@ -7,7 +7,7 @@
 
     <p>
       <span class="white">Développeur web fullstack junior</span>, je suis actuellement en troisième année de
-      <span class="white">BUT MMI à l'IUT de Troyes</span>, je suis à la recherche d'un stage pour mettre en application mes compétences.
+      <span class="white">BUT MMI à l'IUT de Troyes</span>, je suis à la recherche d'un stage de <span class="white">18 semaines</span> pour mettre en application mes compétences.
     </p>
 
     <p>
@@ -34,5 +34,11 @@
 .white{
   color: #d6d6d6;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #apropos {
+    width: 90vw;
+  }
 }
 </style>
