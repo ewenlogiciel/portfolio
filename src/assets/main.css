@@ -7,8 +7,8 @@
 body{
   background-color: black;
   background-image:
-    linear-gradient(rgba(128, 128, 128, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(128, 128, 128, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(128, 128, 128, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(128, 128, 128, 0.2) 1px, transparent 1px);
   background-size: 25px 25px;
   background-attachment: fixed;
   color: #f2f2f2;

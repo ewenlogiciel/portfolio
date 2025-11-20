@@ -26,6 +26,8 @@
 <script setup>
 
 const skills = [
+  'HTML',
+  'CSS',
   'Vue.js',
   'Symfony',
   'Docker',
