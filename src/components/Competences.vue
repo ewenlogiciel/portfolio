@@ -1,21 +1,21 @@
 <template>
-<div id="competences" class="competence_container">
+<div id="competences" class="w-[60vw] mb-[10vh] max-md:w-[90vw]">
 
   <h2>Compétences</h2>
-  <div class="competences_grid" data-aos="fade-right">
+  <div class="w-[60vw] flex gap-x-[0.5vw] flex-wrap max-md:w-[90vw]" data-aos="fade-right">
 
     <div
         v-for="skill in skills"
         :key="skill"
-        class="competence"
+        class="cursor-pointer mb-2 flex border border-white/30 p-2 rounded-sm items-center transition-colors duration-300 hover:bg-[#262626] group"
     >
       <img
           v-if="logos[skillKey(skill)]"
           :src="logos[skillKey(skill)]"
           :alt="skill + ' logo'"
-          class="w-12 h-12 mb-2 object-contain"
+          class="w-6 h-auto mr-2 transition-[filter] duration-300 group-hover:brightness-[1.3]"
       />
-      <p class="text-white font-medium" style="margin: 0;">{{ skill }}</p>
+      <p class="text-[#a5a5a5] font-medium m-0 transition-colors duration-300 group-hover:text-white">{{ skill }}</p>
     </div>
   </div>
 
@@ -53,61 +53,3 @@ const skillKey = (name) => {
   return name.toLowerCase().replace('.', '').replace(/\s+/g, '')
 }
 </script>
-
-<style scoped>
-
-.competence_container{
-  width: 60vw;
-  margin-bottom: 10vh;
-}
-
-.competences_grid{
-  width: 45vw;
-  display: flex;
-  column-gap: 0.5vw;
-  flex-wrap: wrap;
-}
-
-.competence {
-  cursor: pointer;
-  margin-bottom: 0.5rem;
-  display: flex;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  align-items: center;
-  transition: background-color 0.3s ease;
-}
-
-.competence:hover {
-  background-color: #262626;
-}
-
-.competence:hover p {
-  color: white;
-}
-
-.competence:hover img {
-  filter: brightness(1.3);
-}
-
-img{
-  width: 1.5rem;
-  margin-right: 0.5rem;
-  transition: filter 0.3s ease;
-}
-
-p {
-  transition: color 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .competence_container {
-    width: 90vw;
-  }
-
-  .competences_grid {
-    width: 90vw;
-  }
-}
-</style>

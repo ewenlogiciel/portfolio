@@ -3,49 +3,49 @@
 </script>
 
 <template>
-  <div id="projets" >
+  <div id="projets" class="w-[60vw] mb-[10vh] max-md:w-[90vw]">
 
     <h2>Projets</h2>
 
-    <div class="projets2" data-aos="fade-right">
+    <div class="grid grid-cols-2 gap-5 max-md:grid-cols-1" data-aos="fade-right">
 
-    <router-link to="/agenda" class="projet">
-      <h3>Agenda</h3>
-      <p>Application web d'agenda collaboratif</p>
-      <div class="compt-container">
-        <div class="comp">Vue.js</div>
-        <div class="comp">Tailwind CSS</div>
-        <div class="comp">Javascript</div>
-        <div class="comp">Prisma</div>
+    <router-link to="/agenda" class="border border-white/30 rounded-[0.4rem] w-full transition-colors duration-300 p-4 block no-underline text-inherit hover:bg-[#191919] hover:cursor-pointer group">
+      <h3 class="mt-0 mb-2 transition-colors duration-300 group-hover:text-white">Agenda</h3>
+      <p class="mt-0 transition-colors duration-300 group-hover:text-white mb-3">Application web d'agenda collaboratif</p>
+      <div class="flex flex-wrap gap-2">
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Vue.js</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Tailwind CSS</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Javascript</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Prisma</div>
       </div>
     </router-link>
 
-    <router-link to="/utopia" class="projet">
-      <h3>Utopia</h3>
-      <p>Application web de cinéma</p>
-      <div class="compt-container">
-        <div class="comp">Symfony</div>
-        <div class="comp">SCSS</div>
-        <div class="comp">Javascript</div>
-        <div class="comp">MySQL</div>
+    <router-link to="/utopia" class="border border-white/30 rounded-[0.4rem] w-full transition-colors duration-300 p-4 block no-underline text-inherit hover:bg-[#191919] hover:cursor-pointer group">
+      <h3 class="mt-0 mb-2 transition-colors duration-300 group-hover:text-white">Utopia</h3>
+      <p class="mt-0 transition-colors duration-300 group-hover:text-white mb-3">Application web de cinéma</p>
+      <div class="flex flex-wrap gap-2">
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Symfony</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">SCSS</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Javascript</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">MySQL</div>
       </div>
     </router-link>
 
-    <router-link to="/datavision" class="projet">
-      <h3>DataVision</h3>
-      <p>Application web de dataviz</p>
-      <div class="compt-container">
-        <div class="comp">SCSS</div>
-        <div class="comp">Chart.JS</div>
-        <div class="comp">Javascript</div>
+    <router-link to="/datavision" class="border border-white/30 rounded-[0.4rem] w-full transition-colors duration-300 p-4 block no-underline text-inherit hover:bg-[#191919] hover:cursor-pointer group">
+      <h3 class="mt-0 mb-2 transition-colors duration-300 group-hover:text-white">DataVision</h3>
+      <p class="mt-0 transition-colors duration-300 group-hover:text-white mb-3">Application web de dataviz</p>
+      <div class="flex flex-wrap gap-2">
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">SCSS</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Chart.JS</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Javascript</div>
       </div>
     </router-link>
 
-    <router-link to="/oblivion_fest" class="projet">
-      <h3>Oblivion Fest</h3>
-      <p>Maquette pour un festival de musique</p>
-      <div class="compt-container">
-        <div class="comp">Figma</div>
+    <router-link to="/oblivion_fest" class="border border-white/30 rounded-[0.4rem] w-full transition-colors duration-300 p-4 block no-underline text-inherit hover:bg-[#191919] hover:cursor-pointer group">
+      <h3 class="mt-0 mb-2 transition-colors duration-300 group-hover:text-white">Oblivion Fest</h3>
+      <p class="mt-0 transition-colors duration-300 group-hover:text-white mb-3">Maquette pour un festival de musique</p>
+      <div class="flex flex-wrap gap-2">
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Figma</div>
       </div>
     </router-link>
 
@@ -53,76 +53,3 @@
 
   </div>
 </template>
-
-<style scoped>
-#projets{
-  width: 60vw;
-  margin-bottom: 10vh;
-}
-
-.projets2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-.projet{
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  width: fit-content;
-  padding: 0.5rem;
-  border-radius: 0.4rem;
-  width: 100%;
-  transition: background-color 0.3s;
-  padding: 1rem;
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  margin-bottom: 1rem;
-}
-
-.projet:hover{
-  background-color: #191919;
-  cursor: pointer;
-}
-
-.projet:hover h3,
-.projet:hover p {
-  color: white;
-}
-
-.compt-container{
-  display: flex;
-}
-
-.comp{
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  margin-right: 0.5rem;
-}
-
-.comp:hover{
-  cursor: pointer;
-}
-
-h3{
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  transition: color 0.3s ease;
-}
-
-p{
-  margin-top: 0;
-  transition: color 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  #projets {
-    width: 90vw;
-  }
-
-  .projets2 {
-    grid-template-columns: 1fr;
-  }
-}
-</style>

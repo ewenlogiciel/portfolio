@@ -14,10 +14,10 @@
 
   <template>
     <header>
-      <button class="burger-menu" @click="toggleMenu" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="hidden max-md:flex flex-col bg-transparent border-none cursor-pointer p-2.5 z-[1001] fixed top-[3vh] left-[5vw]" @click="toggleMenu" aria-label="Menu">
+        <span class="w-[25px] h-[3px] bg-[#f2f2f2] my-[3px] transition-all duration-300 ease-in-out rounded-[3px]"></span>
+        <span class="w-[25px] h-[3px] bg-[#f2f2f2] my-[3px] transition-all duration-300 ease-in-out rounded-[3px]"></span>
+        <span class="w-[25px] h-[3px] bg-[#f2f2f2] my-[3px] transition-all duration-300 ease-in-out rounded-[3px]"></span>
       </button>
 
       <nav :class="{ 'menu-open': isMenuOpen }">
@@ -32,33 +32,7 @@
   </template>
 
   <style scoped>
-  .burger-menu {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1001;
-  }
-
-  .burger-menu span {
-    width: 25px;
-    height: 3px;
-    background-color: #f2f2f2;
-    margin: 3px 0;
-    transition: all 0.3s ease;
-    border-radius: 3px;
-  }
-
   @media (max-width: 768px) {
-    .burger-menu {
-      display: flex;
-      position: fixed;
-      top: 3vh;
-      left: 5vw;
-    }
-
     nav {
       position: fixed !important;
       top: 0 !important;
@@ -111,12 +85,6 @@
 
     nav a:hover {
       color: #ababab !important;
-    }
-  }
-
-  @media (min-width: 769px) {
-    .burger-menu {
-      display: none;
     }
   }
   </style>
