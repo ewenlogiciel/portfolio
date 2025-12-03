@@ -26,33 +26,8 @@
     @apply flex h-screen m-0 flex-col justify-between items-center;
   }
 
-  nav {
-    @apply fixed top-[5vh] left-1/2 -translate-x-1/2 border border-white/30 rounded-full p-[2%] whitespace-nowrap z-[1000] backdrop-blur-lg ;
-  }
-
-  nav ul {
-    @apply list-none flex flex-nowrap items-center justify-center m-0 pr-[1.5rem] pl-[1.5rem];
-  }
-
-  nav li {
-    @apply flex items-center;
-  }
-
-  nav a {
-    @apply flex items-center;
-  }
-
-  nav li:not(:last-child)::after {
-    content: "·";
-    @apply ml-4 mr-4 text-[#ababab];
-  }
-
   a {
     @apply text-[#f5f5f5] no-underline transition-colors duration-300;
-  }
-
-  nav a:hover {
-    @apply text-[#ababab];
   }
 
   h1 {

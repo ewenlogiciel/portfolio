@@ -13,7 +13,7 @@
       <h3 class="mt-0 mb-2 transition-colors duration-300 group-hover:text-white">Agenda</h3>
       <p class="mt-0 transition-colors duration-300 group-hover:text-white mb-3">Application web d'agenda collaboratif</p>
       <div class="flex flex-wrap gap-2">
-        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Vue.js</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Nuxt</div>
         <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Tailwind CSS</div>
         <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Javascript</div>
         <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Prisma</div>

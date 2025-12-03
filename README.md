@@ -27,6 +27,15 @@ AOS is used in this project to add smooth scroll animations to elements when the
 npm install aos
 ```
 
+### Install Tailwind CSS
+
+Tailwind CSS is used in this project for utility-first styling.
+
+```bash
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
 ### Compile and Hot-Reload for Development
 
 ```bash
