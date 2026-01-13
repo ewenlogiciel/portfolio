@@ -9,13 +9,14 @@
   body {
     background-color: black;
     background-image:
-      linear-gradient(rgba(128, 128, 128, 0.2) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(128, 128, 128, 0.2) 1px, transparent 1px);
+            linear-gradient(rgba(128, 128, 128, 0.2) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(128, 128, 128, 0.2) 1px, transparent 1px);
     background-size: 25px 25px;
     background-attachment: fixed;
     color: #f2f2f2;
     font-family: "Inter", sans-serif;
     margin: 0;
+    overflow-x: hidden;
   }
 
   main {
@@ -23,7 +24,7 @@
   }
 
   #app {
-    @apply flex h-screen m-0 flex-col justify-between items-center;
+    @apply flex h-screen m-0 flex-col justify-between;
   }
 
   a {
@@ -51,9 +52,3 @@
     @apply fixed h-[var(--circle-size)] w-[var(--circle-size)] border-2 border-[#cecece] rounded-full top-[calc(var(--circle-size)/2*-1)] left-[calc(var(--circle-size)/2*-1)] pointer-events-none;
   }
 }
-
-
-
-
-
-

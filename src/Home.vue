@@ -11,27 +11,27 @@ import Site_cree from "@/components/site_cree.vue";
 </script>
 
 <template>
+  <div>
+    <Header/>
 
-  <Header/>
+    <main>
 
-  <main>
+      <Accueil/>
 
-    <Accueil/>
+      <Apropos/>
 
-    <Apropos/>
+      <Competences />
 
-    <Competences />
+      <Projets/>
 
-    <Projets/>
+      <Contact/>
 
-    <Contact/>
+      <site_cree/>
 
-    <site_cree/>
+      <Footer/>
 
-    <Footer/>
-
-  </main>
-
+    </main>
+  </div>
 </template>
 
 <style scoped>

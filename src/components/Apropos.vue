@@ -1,6 +1,6 @@
 <template>
 
-  <div id="apropos" class="w-[60vw] mb-[10vh] max-md:w-[90vw]">
+  <div id="apropos" class="w-[60vw] mx-auto mb-[10vh] max-md:w-[90vw]">
   <h2>À propos</h2>
 
     <div data-aos="fade-right">

@@ -4,25 +4,30 @@ import Agenda from '../components/Projets/Agenda.vue'
 import Utopia from '../components/Projets/Utopia.vue'
 import DataVision from '../components/Projets/DataVision.vue'
 import OblivionFest from '../components/Projets/OblivionFest.vue'
+import Cineverse from "@/components/Projets/Cineverse.vue";
 
 const routes = [
     { path: '/', component: Home },
     { path: '/agenda', component: Agenda },
     { path: '/utopia', component: Utopia },
     { path: '/datavision', component: DataVision },
-    { path: '/oblivion_fest', component: OblivionFest }
+    { path: '/oblivion_fest', component: OblivionFest },
+    { path: '/cineverse', component: Cineverse }
+
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
     scrollBehavior(to, from, savedPosition) {
-        if (savedPosition) {
-            return savedPosition
-        }
+        return new Promise((resolve) => {
+            const delay = (to.path === from.path && to.hash) ? 0 : 300
 
-        if (to.hash) {
-            return new Promise((resolve) => {
+            if (savedPosition) {
+                setTimeout(() => {
+                    resolve(savedPosition)
+                }, delay)
+            } else if (to.hash) {
                 setTimeout(() => {
                     const element = document.querySelector(to.hash)
                     if (element) {
@@ -37,11 +42,13 @@ const router = createRouter({
                     } else {
                         resolve({ top: 0 })
                     }
-                }, 100)
-            })
-        }
-
-        return { top: 0 }
+                }, delay)
+            } else {
+                setTimeout(() => {
+                    resolve({ top: 0 })
+                }, delay)
+            }
+        })
     }
 })
 

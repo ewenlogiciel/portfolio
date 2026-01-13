@@ -18,7 +18,7 @@ const scrollToSection = (sectionId) => {
 </script>
 
 <template>
-  <div id="accueil" data-aos="fade-right" class="mt-[40vh] mb-[26vh] flex flex-col items-center w-[60vw] max-md:w-[90vw] max-md:mt-[20vh] max-md:mb-[15vh]">
+  <div id="accueil" data-aos="fade-right" class="mt-[40vh] mb-[26vh] flex flex-col items-center w-[60vw] mx-auto max-md:w-[90vw] max-md:mt-[20vh] max-md:mb-[15vh]">
 
     <h3 class="mt-0 mb-0 max-md:text-center">Bonjour, je m'appelle Ewen D'Avanzo, je suis</h3>
     <h1 class="mb-[2vh] text-[xxx-large] mt-0 max-md:text-center max-md:w-[70vw]">Développeur web fullstack junior</h1>
@@ -29,7 +29,7 @@ const scrollToSection = (sectionId) => {
     </div>
 
     <div class="mt-[5vh] flex gap-8 max-md:flex-col max-md:w-full max-md:gap-4 max-md:items-center max-md:mb-[5vh]">
-      <a href="/mon-document.pdf" target="_blank" rel="noopener" class="cursor-pointer mb-2 flex border border-white/30 px-4 py-2 rounded-sm text-[#a5a5a5] items-center hover:bg-[#262626] hover:text-white transition-colors duration-300 max-md:justify-center max-md:w-fit group">
+      <a href="/cv_ewen_davanzo.pdf" target="_blank" rel="noopener" class="cursor-pointer mb-2 flex border border-white/30 px-4 py-2 rounded-sm text-[#a5a5a5] items-center hover:bg-[#262626] hover:text-white transition-colors duration-300 max-md:justify-center max-md:w-fit group">
         <img :src="oeil" alt="oeil" class="w-6 h-6 mr-2 transition-[filter] duration-300 group-hover:brightness-200">
         <span>Voir mon CV</span>
       </a>

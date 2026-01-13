@@ -1,5 +1,5 @@
 <template>
-<div id="competences" class="w-[60vw] mb-[10vh] max-md:w-[90vw]">
+<div id="competences" class="w-[60vw] mx-auto mb-[10vh] max-md:w-[90vw]">
 
   <h2>Compétences</h2>
   <div class="w-[60vw] flex gap-x-[0.5vw] flex-wrap max-md:w-[90vw]" data-aos="fade-right">

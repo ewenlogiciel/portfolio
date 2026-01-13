@@ -19,7 +19,7 @@ const skillKey = (name) => {
 </script>
 
 <template>
-  <div class="w-[60vw] mb-[15vh] max-md:w-[90vw]" >
+  <div class="w-[60vw] mx-auto mb-[15vh] max-md:w-[90vw]" >
 
     <h2>Site web créé avec</h2>
 
