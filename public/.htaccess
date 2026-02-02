@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Si le fichier ou dossier demandé existe vraiment, on le sert (ex: images, css)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Sinon, on renvoie tout sur index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
