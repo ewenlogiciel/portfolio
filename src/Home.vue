@@ -7,6 +7,7 @@ import Projets from "@/components/Projets.vue";
 import Footer from "@/components/Footer.vue";
 import Header from "@/components/Header.vue";
 import Site_cree from "@/components/site_cree.vue";
+import Parcours from "@/components/Parcours.vue";
 
 </script>
 
@@ -21,6 +22,8 @@ import Site_cree from "@/components/site_cree.vue";
       <Apropos/>
 
       <Competences />
+
+      <Parcours/>
 
       <Projets/>
 
