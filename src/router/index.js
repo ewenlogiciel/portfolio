@@ -1,17 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../Home.vue'
 import Agenda from '../components/Projets/Agenda.vue'
-import Utopia from '../components/Projets/Utopia.vue'
 import DataVision from '../components/Projets/DataVision.vue'
-import OblivionFest from '../components/Projets/OblivionFest.vue'
+import Nexus from '../components/Projets/Nexus.vue'
 import Cineverse from "@/components/Projets/Cineverse.vue";
 
 const routes = [
     { path: '/', component: Home },
     { path: '/agenda', component: Agenda },
-    { path: '/utopia', component: Utopia },
-    { path: '/datavision', component: DataVision },
-    { path: '/oblivion_fest', component: OblivionFest },
+{ path: '/datavision', component: DataVision },
+    { path: '/nexus', component: Nexus },
     { path: '/cineverse', component: Cineverse }
 
 ]

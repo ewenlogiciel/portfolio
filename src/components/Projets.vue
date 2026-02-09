@@ -32,14 +32,12 @@
       </div>
     </router-link>
 
-    <router-link to="/utopia" class="border border-white/30 rounded-[0.4rem] w-full transition-colors duration-300 p-4 block no-underline text-inherit hover:bg-[#191919] hover:cursor-pointer group">
-      <h3 class="mt-0 mb-2 transition-colors duration-300 group-hover:text-white">Utopia</h3>
-      <p class="mt-0 transition-colors duration-300 group-hover:text-white mb-3">Application web de cinéma</p>
+    <router-link to="/nexus" class="border border-white/30 rounded-[0.4rem] w-full transition-colors duration-300 p-4 block no-underline text-inherit hover:bg-[#191919] hover:cursor-pointer group">
+      <h3 class="mt-0 mb-2 transition-colors duration-300 group-hover:text-white">Nexus</h3>
+      <p class="mt-0 transition-colors duration-300 group-hover:text-white mb-3">Jeu de tir en VR</p>
       <div class="flex flex-wrap gap-2">
-        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Symfony</div>
-        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">SCSS</div>
-        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Javascript</div>
-        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">MySQL</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">Unity</div>
+        <div class="border border-white/30 p-2 rounded-sm hover:cursor-pointer">C#</div>
       </div>
     </router-link>
 
